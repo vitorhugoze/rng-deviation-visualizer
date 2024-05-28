@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div style="width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+        <div style="display: block; width: 80vw; height: 100%;">
+            <div id="curve_chart" style="width: 80vw; height: 60vh;"></div>
+            <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 30px; background: lightgrey;">
+                <p style="margin-right: 5px; font-family: system-ui, -apple-system, sans-serif;">Data size:</p>
+                <input type="number" name="data-size" id="data-size" style="width: 70px; height: 18px; margin-right: 5px;">
+                <p style="margin-right: 5px; font-family: system-ui, -apple-system, sans-serif;">Average:</p>
+                <input type="number" name="data-average" id="data-average" style="width: 70px; height: 18px; margin-right: 5px;">
+                <input type="button" value="Apply" style="height: 24px;" onclick="applyDataParameters()">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
