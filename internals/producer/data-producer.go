@@ -12,6 +12,10 @@ type DeviationData struct {
 	Deviation float64 `json:"deviation"`
 }
 
+/*
+Generates a list of random numbers, then calculates the standard deviation
+whithin that group and add that deviation to the WebSocket queue to be transmitted
+*/
 func ProduceDeviationData(interval time.Duration, totalRandoms int, shards int) {
 
 	index := 0
